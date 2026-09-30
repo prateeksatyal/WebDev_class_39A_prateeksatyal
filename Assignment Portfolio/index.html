@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boss Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <h1>Prateek Satyal</h1>
+
     <h2>Chief Executive Officer</h2>
 
     <p>
@@ -17,12 +19,14 @@
         <a href="#experience">Experience</a> |
         <a href="#skills">Skills</a> |
         <a href="#projects">Projects</a> |
-        <a href="#youtube">YouTube Video</a>
+        <a href="#youtube">YouTube Video</a> |
+        <a href="#contact">Contact</a>
     </p>
 
     <hr>
 
     <h2 id="introduction">Introduction</h2>
+
     <p>
         Prateek Satyal is a <strong>technology-focused professional</strong> with an interest in
         software development, web technologies, and digital innovation. He has worked on
@@ -35,10 +39,11 @@
 
     <figure>
         <img src="boss.jpg" alt="Boss image" width="400">
-        <figcaption>I’m pretty</figcaption>
+        <figcaption>I'm pretty</figcaption>
     </figure>
 
     <h2 id="experience">Experience</h2>
+
     <ol>
         <li>Chief Executive Officer at a Private Technology Firm</li>
         <li>Software Development Project Experience</li>
@@ -48,23 +53,28 @@
     </ol>
 
     <h2 id="skills">Skills</h2>
+
     <table border="1">
         <tr>
             <th>Skills</th>
             <th>Years</th>
         </tr>
+
         <tr>
             <td>HTML</td>
             <td>3</td>
         </tr>
+
         <tr>
             <td>Java</td>
             <td>2</td>
         </tr>
+
         <tr>
             <td>Python</td>
             <td>2</td>
         </tr>
+
         <tr>
             <td>Database Management</td>
             <td>2</td>
@@ -72,6 +82,7 @@
     </table>
 
     <h2 id="projects">Projects</h2>
+
     <ul>
         <li>Student Management System</li>
         <li>Career Development Platform</li>
@@ -80,9 +91,58 @@
     </ul>
 
     <h2 id="youtube">YouTube Video</h2>
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Fiq9XMRr4jg" title="YouTube video"
         allowfullscreen>
     </iframe>
+
+    <h2 id="contact">Contact Form</h2>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <input type="radio" name="gender" value="other">
+        Other
+
+        <br><br>
+
+        <label for="role">Role:</label>
+
+        <select id="role" name="role">
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
 
 </body>
 
