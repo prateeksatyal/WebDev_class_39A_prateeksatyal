@@ -17,11 +17,11 @@ h1 {
     text-align: center;
     color: var(--white);
     background-color: var(--primary);
-    padding: 25px;
+    padding: 20px;
     margin: 0;
 }
 
-body>h2:not(#introduction) {
+body>h2:first-of-type {
     text-align: center;
     color: var(--white);
     background-color: var(--primary);
@@ -31,42 +31,38 @@ body>h2:not(#introduction) {
 
 body>p {
     text-align: center;
-    color: var(--white);
-    background-color: var(--primary);
+    background-color: var(--secondary);
     padding: 15px;
     margin: 0;
 }
 
-a {
+body>p a {
     color: var(--white);
     text-decoration: none;
-    font-size: 17px;
-    margin: 0 10px;
+    font-size: 16px;
+    margin: 0 8px;
 }
 
-a:hover {
-    color: var(--secondary);
+body>p a:hover {
+    color: var(--primary);
 }
 
 hr {
     border: 2px solid var(--secondary);
 }
 
-#introduction {
+body>h2:not(:first-of-type) {
     color: var(--primary);
-    background-color: var(--white);
+    background-color: transparent;
     text-align: left;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 0;
+    margin: 15px;
     font-weight: bold;
 }
 
-h2#introduction+p {
+#introduction+p {
     background-color: var(--white);
-    color: var(--text);
     text-align: justify;
-    font-size: 18px;
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
@@ -75,8 +71,9 @@ h2#introduction+p {
 figure {
     background-color: var(--white);
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
     border-radius: 15px;
 }
 
@@ -99,11 +96,11 @@ ol li {
     margin: 10px;
 }
 
-li:nth-child(odd) {
+ol li:nth-child(odd) {
     font-weight: lighter;
 }
 
-li:nth-child(even) {
+ol li:nth-child(even) {
     font-weight: bold;
 }
 
@@ -137,7 +134,7 @@ tr:hover {
     border-radius: 15px;
 }
 
-#projects+ul>li {
+#projects+ul li {
     padding: 10px;
 }
 
@@ -189,16 +186,14 @@ button {
 
 button:hover {
     background-color: var(--secondary);
-    color: var(--white);
 }
 
 @media (max-width: 768px) {
-
     h1 {
         font-size: 30px;
     }
 
-    a {
+    body>p a {
         display: inline-block;
         margin: 5px;
     }
@@ -218,12 +213,11 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-
     h1 {
         font-size: 25px;
     }
 
-    a {
+    body>p a {
         display: block;
         margin: 8px;
     }
